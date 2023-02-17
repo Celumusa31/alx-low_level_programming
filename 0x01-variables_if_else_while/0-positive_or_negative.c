@@ -4,27 +4,25 @@
 
 /**
  * main - Entry point
- * describtion: program prints output:
- *            if n is greater than 0:is positive
- *            if n is 0: is zero
- *            if n is less than 0:is negative
- * Return: 0
+ *Describtion: program prints whether a number is positive or negative
+ * return: 0
  */
-
 int main(void)
 {
 	int n;
 
-	scanf("%d", &n);
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("is positive\n");
+	{
+		printf("%d is positive\n", n);
+	}
 	else if (n == 0)
-		printf("is zero\n");
-	else(n < 0)
-		printf("is negative\n");
+	{
+		printf("%d is zero\n", n);
+	{
+	else
+		printf("%d is negative\n", n);
 
 	return (0);
 }
