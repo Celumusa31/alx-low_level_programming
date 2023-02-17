@@ -18,4 +18,4 @@ int main(void)
 		putchar(alphabet);
 	}
 	putchar('\n');
-	getch();
+	getalphabet();
