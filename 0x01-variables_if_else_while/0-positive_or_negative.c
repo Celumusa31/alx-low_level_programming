@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main:  Entry point
  *Describtion: program prints whether a number is positive or negative
  * return: 0
  */
@@ -22,7 +22,9 @@ int main(void)
 		printf("%d is zero\n", n);
 	{
 	else
+	{
 		printf("%d is negative\n", n);
+	}
 
 	return (0);
 }
