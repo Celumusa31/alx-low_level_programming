@@ -6,8 +6,14 @@
  */
 int main(void)
 {
-	putchar("Hello World");
-	putchar("\n");
+	 int i;
+
+	for (i = 0; i <= 5; i++)
+	{
+		putchar(i);
+	}
+
+	putchar('\n');
 
 	return (0);
 }
