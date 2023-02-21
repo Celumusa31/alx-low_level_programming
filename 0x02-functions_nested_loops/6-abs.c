@@ -2,19 +2,18 @@
 /**
  * _abs - Entry points
  *
- * Return: Always 0 (Success)
+ * Return: Always return absolute value of n  (Success)
  */
 int _abs(int n)
 {
 	if (n < 0)
 	{
 		n = (-1) * n;
-		_putchar('0' + n);
+		return (n);
 	}
 	else
 	{
-		_putchar('0' + n);
+		return (n);
 	}
-	_putchar('\n');
-	return (0);
+	
 }
