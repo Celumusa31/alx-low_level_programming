@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "include"
 /**
  * main - Entry point
  *
@@ -10,7 +10,7 @@ int main(void)
 
 	for (int = i = 0; i < sizeof(c); i++)
 	{
-		putchar(c[i]);
+		_putchar(c[i]);
 	}
 	return (0);
 }
