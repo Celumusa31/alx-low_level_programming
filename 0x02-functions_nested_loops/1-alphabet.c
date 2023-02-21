@@ -5,3 +5,4 @@
  *
  * Return: Always 0.
  */
+print_alphabet();
