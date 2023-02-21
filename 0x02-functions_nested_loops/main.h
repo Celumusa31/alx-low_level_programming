@@ -10,5 +10,5 @@
 
 int _putchar(char c);
 
-void print_alphabet(void);
+static void print_alphabet(void);
 
