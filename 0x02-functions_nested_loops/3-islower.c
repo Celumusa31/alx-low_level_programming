@@ -2,8 +2,7 @@
 /**
  * _islower - Entry point
  *
- * Return: Always 1 (Success)
- * Return: Always 0 (Success) if otherwise
+ * Return: Always 1 or 0 (Success)
  */
 int _islower(int c)
 {
