@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - Entry points
- *
+ * @n: The character to be checked
  * Return: Always return absolute value of n  (Success)
  */
 int _abs(int n)
@@ -15,5 +15,4 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	
 }
