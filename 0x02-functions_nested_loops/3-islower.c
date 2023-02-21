@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print _islower - Entry point
+ * _islower - Entry point
  *
  * Return: Always 1 (Success)
  * Return: Always 0 (Success) if otherwise
