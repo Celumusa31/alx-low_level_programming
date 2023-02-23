@@ -4,13 +4,11 @@
  * @a: The character to be checked
  * @b: The character to be checked
  *
- * Return: Always 0 (Success)
+ * Return: Always the resulting answer (Success)
  */
 int mul(int a, int b)
 {
 	int c = a * b;
-{
-	_putchar(c);
-}
-	return (0);
+
+	return (c);
 }
