@@ -2,7 +2,6 @@
 /**
  * print_numbers - Entry point
  *
- * Return: Always void (Success)
  */
 void print_numbers(void)
 {
