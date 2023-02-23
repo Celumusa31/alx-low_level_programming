@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - Entry point
- *
+ * @n: The character to be checked
  * Return: Always void (Success)
  */
 void print_line(int n)
