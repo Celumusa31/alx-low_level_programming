@@ -30,7 +30,7 @@ void more_numbers(void)
 			{
 				_putchar(last_digit + '0');
 			}
-				
+
 		}
 		_putchar('\n');
 	}
