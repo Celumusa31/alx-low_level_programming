@@ -6,11 +6,11 @@
  *
  * Return: Always 0 (Success)
  */
-int mul(int a, int b, results)
+int mul(int a, int b, int c)
 {
-	results = a * b;
+	c = a * b;
 {
-	_putchar(result);
+	_putchar(c);
 }
 	return (0);
 }
