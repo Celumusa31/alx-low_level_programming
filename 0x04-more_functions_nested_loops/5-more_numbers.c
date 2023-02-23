@@ -8,8 +8,6 @@ void more_numbers(void)
 {
 	int i;
 	int j;
-	int a = j / 10;
-	int b = j % 10;
 
 	for (i = 0; i < 10; i++)
 		for (j = 0; j <= 14; j++)
@@ -19,8 +17,8 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar(a + '0');
-				_putchar(b + '0');
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
 			}
 	_putchar('\n');
 }
