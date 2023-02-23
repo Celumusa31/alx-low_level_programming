@@ -11,17 +11,26 @@ void more_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
+		int first_digit;
+		int last_digit = -1;
+
 		for (j = 0; j <= 14; j++)
 		{
 			if (j < 10)
 			{
-				_putchar(j + '0');
+				first_digit = j;
 			}
 			else
 			{
-				_putchar((j / 10) + '0');
-				_putchar((j % 10) + '0');
+				first_digit = j / 10;
+				last_digit = j % 10;
 			}
+			_putchar(first_digit + '0');
+			if (last_digit > -1)
+			{
+				_putchar(last_digit + '0');
+			}
+				
 		}
 		_putchar('\n');
 	}
