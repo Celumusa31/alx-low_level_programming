@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 /**
  * print_rev - Entry point
  * @s: Character to be checked
@@ -20,7 +19,7 @@ void print_rev(char *s)
 	start_ptr = s;
 	end_ptr = s + len - 1;
 
-	for (index = 0; index < len/2; index++)
+	for (index = 0; index < len /2; index++)
 	{
 		temp = *end_ptr;
 		*end_ptr = *start_ptr;
