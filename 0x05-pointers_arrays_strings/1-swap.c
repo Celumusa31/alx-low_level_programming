@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - Entry point
@@ -9,10 +10,10 @@
  */
 void swap_int(int *a, int *b)
 {
-	int temp = a;
-	a = b;
-	b = temp;
+	int temp;
 
-	printf("a = %d, b = %d", a, b);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
