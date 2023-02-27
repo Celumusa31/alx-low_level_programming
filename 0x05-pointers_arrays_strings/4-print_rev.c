@@ -28,4 +28,5 @@ void print_rev(char *s)
 		start_ptr++;
 		end_ptr--;
 	}
+	printf("%s\n", *s);
 }
