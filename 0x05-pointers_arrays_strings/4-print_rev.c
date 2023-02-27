@@ -11,5 +11,5 @@ void print_rev(char *s)
 	int i;
 
 	for (i = sizeof(s); i >= 0; i--)
-	putchar(*s[i]);
+	printf(*s[i]);
 }
