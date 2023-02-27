@@ -10,7 +10,7 @@ void reset_to_98(int *n)
 {
 	*n = 98;
 
-	_putchar(&n + '0');
+	printf("Value: %d\n", (void*)n) ;
 
 }
 
