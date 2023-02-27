@@ -10,7 +10,7 @@ void reset_to_98(int *n)
 {
 	*n = 98;
 
-	printf("Value: %d\n", (void*)n) ;
+	printf("Value: %d\n", *n) ;
 
 }
 
