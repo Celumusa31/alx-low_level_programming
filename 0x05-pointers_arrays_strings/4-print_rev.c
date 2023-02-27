@@ -10,24 +10,17 @@
  */
 void print_rev(char *s)
 {
-	unsigned int len;
-	unsigned int index;
+	int c = 0;
 
-	char *start_ptr, *end_ptr, temp;
-
-	len = sizeof(s);
-
-	start_ptr = s;
-	end_ptr = s + len - 1;
-
-	for (index = 0; index < len / 2; index++)
+	while (s[c] != '\0')
 	{
-		temp = *end_ptr;
-		*end_ptr = *start_ptr;
-		*start_ptr = temp;
-
-		start_ptr++;
-		end_ptr--;
+		c++;
 	}
-	printf("%d\n", *s);
+
+	for (c -= 1; c >= 0; c--)
+	{
+		_putchar(s[c]);
+	}
+
+	_putchar('\n');
 }
