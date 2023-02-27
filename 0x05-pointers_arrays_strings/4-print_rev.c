@@ -9,5 +9,6 @@
  */
 void print_rev(char *s)
 {
-	revstr(s)
+	reverseString(s);
+	S = write(s);
 }
