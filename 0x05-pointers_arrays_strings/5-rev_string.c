@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int length, c;
 	char *begin, *end, temp;
 
-	length = string_length(s);
+	length = sizeof(s);
 
 	begin = s;
 	end = s;
