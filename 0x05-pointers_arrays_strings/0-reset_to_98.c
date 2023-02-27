@@ -12,7 +12,7 @@ void reset_to_98(int *n)
 	n = &a;
 
 {
-	_putchar(n);
+	_putchar(a);
 }
 {
 	_putchar(*n);
