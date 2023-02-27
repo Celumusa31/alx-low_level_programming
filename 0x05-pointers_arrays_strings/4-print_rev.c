@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * print_rev - Entry point
  * @s: Character to be checked
@@ -8,8 +8,21 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int len;
+	int index;
 
-	for (i = sizeof(s) - 2; i >= 0; i--)
-	_putchar(*s[i]);
+	char *start_ptr, *end_ptr, temp;
+
+	len = strlen(s);
+
+	start_ptr = s;
+	end_ptr = s + len - 1;
+
+	for (index = 0; index < len/2; index++)
+		temp = *end_ptr;
+		*end_ptr = *start_ptr;
+		*start_ptr = temp;
+
+		start_ptr++;
+		end_ptr--;
 }
