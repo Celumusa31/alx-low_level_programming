@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - Entry point
- * @str : Character to be checked
+ * @a: Character to be checked
+ * @n: Character to be checked
  * Return: Always void (Success)
  */
 void print_array(int *a, int n)
