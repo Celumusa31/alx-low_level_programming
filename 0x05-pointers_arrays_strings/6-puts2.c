@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * puts_half - Entry point
- * @str: The character to be checked
+ * puts2 - Entry point
+ * @str: Character to be checked
  *
  * Return: Always void (Success)
  */
-void puts_half(char *str)
+void puts2(char *str)
 {
 	int i;
 	int j = 0;
@@ -18,5 +18,5 @@ void puts_half(char *str)
 	{
 		_putchar(str[i]);
 	}
-	-putchar('\n');
+	_putchar('\n');
 }
