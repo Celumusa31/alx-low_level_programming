@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - Entry point
- * str: Character to be checked
+ * @str: Character to be checked
  * Return: Always void (Success)
  */
 void puts_half(char *str)
