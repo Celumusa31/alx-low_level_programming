@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - Entry point
- * *str: Character to be checked
+ * str: Character to be checked
  * Return: Always void (Success)
  */
 void puts_half(char *str)
@@ -16,11 +16,11 @@ void puts_half(char *str)
 	if (j % 2 == 1)
 	{
 		i = (j - 1) / 2;
-		i++;
+		i+=;
 	}
 	else
 	{
-		i = j / 1;
+		i = j / 2;
 	}
 	for (; i < j; i++)
 	{
