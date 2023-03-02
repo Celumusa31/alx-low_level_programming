@@ -9,11 +9,20 @@
  */
 void reverse_array(int *a, int n)
 {
-	for (int low = 0, high = n - 1; low < high; low++, high--)
+	p = a;
+
+	for (i = 1; i < n; i++)
 	{
-		int temp = a[low];
-		 a[low] = a[high];
-		a[high] = temp;
+		p++;
 	}
+
+	for (k = 0; k < i / 2; k++)
+	{
+		aux = a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
+	}
+
 }
 
