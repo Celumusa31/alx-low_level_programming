@@ -9,14 +9,14 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	size_t len = strlen(str);
+	size_t i;
 
-	for (i = 0; i < i <= strlen(str); i++)
+	for (i = 0; i < len; i++)
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-		{
-			str[i] = str[i] - 32;
-		}
+	if (str[i] >= 'a' && str[i] <= 'z') {
+		str[i] = str[i] - 'a' + 'A'; 
 	}
-	return (str[i]);
+	}
+	return str;
 }
