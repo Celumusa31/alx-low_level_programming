@@ -11,7 +11,19 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	strncpy(dest, src, n);
+	if ((dest == NULL) &&(src == NULL))
+		 return NULL;
+
+	char* start = dest;
+
+	while (*src && n--)
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+
+	*dest = '\0';
 
 }
 
