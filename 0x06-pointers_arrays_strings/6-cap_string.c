@@ -5,7 +5,7 @@
  * cap_string - Entry point
  * @str: Character to be checked
  *
- * Return: Always char (Success)
+ * Return: Always str (Success)
  */
 char *cap_string(char *str)
 {
