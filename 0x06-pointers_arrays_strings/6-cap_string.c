@@ -9,15 +9,24 @@
  */
 char *cap_string(char *str)
 {
-	unsigned int len = sizeof(str) - 1;
-	unsigned int i;
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; i < len; i++)
+	while (str[a])
 	{
-	if (str[i] >= 'a' && str[i] <= 'z')
-	{
-		str[i] = str[i] - 'a' + 'A';
+		i = 0;
+
+		while (i < cspc)
+		{
+			if ((a == 0 || str[a - 1] == spc[i]) && (str[a] >= 97 && str[a] <= 122))
+				s[a] -= 32;
+
+			i++;
+		}
+
+		a++;
 	}
-	}
+
 	return (str);
 }
