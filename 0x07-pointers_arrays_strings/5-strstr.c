@@ -11,14 +11,13 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
+	char *ptr = strstr(haystack, needle);
+
+	if (ptr != NULL)
 	{
-		if ((*haystack == *needle) && compare(haystack, needle))
-		{
-			return (haystack);
-		}
-		haystack++;
+		return (ptr);
 	}
-	return (NULL);
+	else
+		return (NULL);
 }
 
