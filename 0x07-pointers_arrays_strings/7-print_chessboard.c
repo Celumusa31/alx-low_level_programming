@@ -4,7 +4,6 @@
 /**
  * print_chessboard - Entry point
  * @a: Character to be checked
- * @8: Character to be checked
  *
  * Return: Always void (Success)
  */
