@@ -10,7 +10,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ptr = strstr(s, c);
+	char *ptr = strchr(s, c);
 
 	if (ptr != NULL)
 	{
