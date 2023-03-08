@@ -9,7 +9,7 @@ int is_prime_number(int n)
 {
 	int i;
 
-	if (n == i)
+	if (n == 1)
 		return (1);
 
 	if (n % i == 0)
