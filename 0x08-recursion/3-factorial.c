@@ -8,8 +8,8 @@
  */
 int factorial(int n)
 {
-	if (y == 0)
+	if (n == 0)
 		return 1;
 
-	return y * factorial(y - 1)
+	return n * factorial(n - 1)
 }
