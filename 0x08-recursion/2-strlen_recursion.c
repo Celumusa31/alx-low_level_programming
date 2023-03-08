@@ -9,7 +9,7 @@
  */
 int _strlen_recursion(char *s)
 {
-	strlen(s);
+	len = strlen(s);
 
-	return (s);
+	return (len);
 }
