@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <math.h>
 /**
  * _pow_recursion - Entry point
  * @x: Character to be checked
