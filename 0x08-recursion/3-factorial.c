@@ -18,7 +18,7 @@ int factorial(int n)
 	}
 	return (fact);
 
-	else
+	else if
 	{
 		return (-1);
 
