@@ -1,24 +1,42 @@
 #include "main.h"
 /**
- * is_prime_number - Entry point
+ * check_prime - Entry point
  * @n: Character to be checked
+ * @i: Character to be checked
  *
  * Return: Always int (Success)
  */
+int check_prime(int n, int i);
+
+/**
+  * is_prime_number - Entry point
+  * @n: Character to be checked
+  *
+  * Return: Always integer (Success)
+  */
 int is_prime_number(int n)
 {
-	int i = 2;
-	
-	if (n == 0 || n == 1)
+	return (check_prime(n, 1));
+}
+
+/**
+  * check_prime - Check if number is prime
+  * @n: the number to be checked
+  * @i: the iteration times
+  *
+  * Return: 1 for prime or 0 composite
+  */
+int check_prime(int n, int i)
+{
+	if (n <= 1)
 		return (0);
 
-	if (n == i)
+	if (n % i == 0 && i > 1)
+		return (0);
+
+	if ((n / i) < i)
 		return (1);
 
-	if (n % i == 0)
-		return (0);
-	i++;
-
-	return (is_prime_number(n));
+	return (check_prime(n, i + 1));
 }
 
