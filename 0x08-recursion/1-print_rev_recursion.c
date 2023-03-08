@@ -9,8 +9,18 @@
  */
 void _print_rev_recursion(char *s)
 {
-	revstr(s);
+	int i, len, temp;
 
-	printf("%c", s);
+	len = strlen(s);
+
+	if (i < len / 2)
+	{
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
+		i++;
+	}
+	printf("%s", s);
+	
 
 }
