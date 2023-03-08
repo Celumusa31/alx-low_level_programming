@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
  * _strlen_recursion - Entry point
  * @s: Character to be checked
