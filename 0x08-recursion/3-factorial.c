@@ -13,6 +13,6 @@ int factorial(int n)
 
 	return (n * factorial(n - 1));
 
-	else (n < 0)
+	if (n < 0)
 		return (-1);
 }
