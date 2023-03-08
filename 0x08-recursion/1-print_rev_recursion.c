@@ -9,23 +9,13 @@
  */
 void _print_rev_recursion(char *s)
 {
-	char revstr(s);
-	char *stptr = s;
-	char *rvptr = revstr;
-	int i = -1;
+	int len, i;
 
-	while (*stptr)
+	len = strlen(s);
+
+	for (i = len; i >= 0; i--)
 	{
-		stptr++;
-		i++;
+		printf("%c", *(s + i));
 	}
-	while (i >= 0)
-	{
-		stptr--;
-		*rvptr = *stptr;
-		rvptr++;
-		--i;
-	}
-	*rvptr = '\0'
 
 }
