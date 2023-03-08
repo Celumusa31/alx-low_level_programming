@@ -1,5 +1,6 @@
 #include "main.h"
 
+int _sqrt(intn, int i);
 /**
  * _sqrt_recursion - Entry point
  * @n: Character to be checked
