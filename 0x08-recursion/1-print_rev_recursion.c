@@ -9,18 +9,14 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i = 0, len, temp;
-
-	len = strlen(s);
-
-	if (i < len / 2)
+	if (*s == '\0')
 	{
-		temp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = temp;
-		i++;
-
-		reverse(s);
+		return;
 	}
+
+	s++;
+	_print_rev_recursion(s);
+	s--;
+
 	printf("%s", s);
 }
