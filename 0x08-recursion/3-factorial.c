@@ -8,19 +8,8 @@
  */
 int factorial(int n)
 {
-	int fact = 1;
-	int i = 0;
+	if (y == 0)
+		return 1;
 
-	if (i <= n)
-	{
-		fact = fact * i;
-		i++;
-	}
-	return (fact);
-
-	else if
-	{
-		return (-1);
-
-	}
+	return y * factorial(y - 1)
 }
