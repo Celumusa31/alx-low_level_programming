@@ -11,10 +11,10 @@
 int _pow_recursion(int x, int y)
 {	
 	if (x == 0)
-		return;
+		return (x);
 
 	if (y == 0)
-		return;
+		return (y);
 
 	if (y < 0)
 		return (-1);
