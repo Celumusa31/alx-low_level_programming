@@ -11,14 +11,14 @@ int factorial(int n)
 	int fact = 1;
 	int i = 0;
 
-	while (i <= n)
+	if (i <= n)
 	{
 		fact = fact * i;
 		i++;
 	}
 	return (fact);
 
-	while (i > n)
+	else
 	{
 		return (-1);
 
