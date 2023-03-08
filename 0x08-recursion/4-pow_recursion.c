@@ -9,12 +9,15 @@
  * Return: Always int (Success)
  */
 int _pow_recursion(int x, int y)
-{
-	int answer = power(x, y);
-	
-	if (y >= 0)
-		return (answer);
+{	
+	if (x == 0)
+		return;
 
-	else
+	if (y == 0)
+		return;
+
+	if (y < 0)
 		return (-1);
+
+	return x * power(x, y - 1);
 }
