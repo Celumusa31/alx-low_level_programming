@@ -8,10 +8,24 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
-		return (n);
 
-	if (n < 0)
+	return (_sqrt_wrapper(n, 1, n));
+}
+
+int _sqrt_wrapper(int n, int min, int max)
+{
+	if (max < min)
 		return (-1);
-	return (_sqrt_recursion(n));
+
+	int guess = (min + max) / 2;
+	int guess_squared = guess * guess;
+
+	if (guess_squared == n)
+		return (guess);
+
+	else if (guess_squared < n)
+		return (_sqrt_wrapper(n, guess + 1, max));
+
+	else
+		return (_sqrt_wrapper(n, min, guess - 1));
 }
