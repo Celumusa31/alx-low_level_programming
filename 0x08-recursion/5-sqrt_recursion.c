@@ -9,23 +9,18 @@
 int _sqrt_recursion(int n)
 {
 
-	return (_sqrt_wrapper(n, 1, n));
+	return (_sqrt(n, 1));
 }
 
-int _sqrt_wrapper(int n, int min, int max)
+int _sqrt(int n, int i)
 {
-	if (max < min)
+	int sqrt = i * i;
+
+	if (sqrt > n)
 		return (-1);
 
-	int guess = (min + max) / 2;
-	int guess_squared = guess * guess;
+	if (sqrt == n)
+		return (i);
 
-	if (guess_squared == n)
-		return (guess);
-
-	else if (guess_squared < n)
-		return (_sqrt_wrapper(n, guess + 1, max));
-
-	else
-		return (_sqrt_wrapper(n, min, guess - 1));
+	return (_sqrt(n, i + 1));
 }
