@@ -1,3 +1,5 @@
+!<arch>
+0-isupper.c/    0           0     0     644     292       `
 #include "main.h"
 /**
  * _isupper - Entry point
@@ -16,6 +18,7 @@ int _isupper(int c)
                 return (0);
         }
 }
+0-memset.c/     0           0     0     644     334       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -33,7 +36,7 @@ char *_memset(char *s, char b, unsigned int n)
         memset(s, b, n * sizeof(s[n]));
         return (s);
 }
-
+0-strcat.c/     0           0     0     644     286       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -51,61 +54,7 @@ char *_strcat(char *dest, char *src)
 
         return (dest);
 }
-#include "main.h"
-/**
- * _isdigit - Entry point
- * @c: The character to be checked
- *
- * Return: Always 1 or 0 (Success)
- */
-int _isdigit(int c)
-{
-        if (c >= '0' && c <= '9')
-        {
-                return (1);
-        }
-        else
-        {
-                return (0);
-        }
-}
-#include "main.h"
-
-/**
- * _memcpy - Entry point
- * @dest: Character to be checked
- * @src: Character to be checked
- * @n: Character to be checked
- *
- * Return: Always pointer (Success)
- */
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-        unsigned int i;
-
-        for (i = 0; i < n; i++)
-        {
-                dest[i] = src[i];
-        }
-
-        return (dest);
-}
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
-/**
- * _strncat - Entry point
- * @dest: Character to be checked
- * @src: Character to be checked
- * @n: Character to be checked
- *
- * Return: Always dest (Success)
- */
-char *_strncat(char *dest, char *src, int n)
-{
-        strncat(dest, src, n);
-        return (dest);
-}
+100-atoi.c/     0           0     0     644     645       `
 #include "main.h"
 
 /**
@@ -142,48 +91,67 @@ int _atoi(char *s)
         ni *= min;
         return (ni);
 }
+
+1-isdigit.c/    0           0     0     644     292       `
+#include "main.h"
+/**
+ * _isdigit - Entry point
+ * @c: The character to be checked
+ *
+ * Return: Always 1 or 0 (Success)
+ */
+int _isdigit(int c)
+{
+        if (c >= '0' && c <= '9')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+1-memcpy.c/     0           0     0     644     381       `
+#include "main.h"
+
+/**
+ * _memcpy - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * @n: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+        unsigned int i;
+
+        for (i = 0; i < n; i++)
+        {
+                dest[i] = src[i];
+        }
+
+        return (dest);
+}
+
+1-strncat.c/    0           0     0     644     328       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
 /**
- * _strchr - Entry point
- * @s: Character to be checked
- * @c: Character to be checked
+ * _strncat - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * @n: Character to be checked
  *
- * Return: Always pointer (Success)
+ * Return: Always dest (Success)
  */
-char *_strchr(char *s, char c)
+char *_strncat(char *dest, char *src, int n)
 {
-        char *ptr = strchr(s, c);
-
-        if (ptr != NULL)
-        {
-                return (ptr);
-        }
-        else
-        {
-                return (NULL);
-        }
+        strncat(dest, src, n);
+        return (dest);
 }
-#include "main.h"
-
-/**
- * _strlen - Entry point
- * @s: Character to be checked
- *
- * Return: Always integer (Success)
- */
-int _strlen(char *s)
-{
-        int strlen = 0;
-
-        while (*s != '\0')
-        {
-                strlen++;
-                s++;
-        }
-        return (strlen);
-}
+2-strncpy.c/    0           0     0     644     593       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -218,6 +186,53 @@ char *_strncpy(char *dest, char *src, int n)
 
         return (dest);
 }
+
+2-strchr.c/     0           0     0     644     400       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strchr - Entry point
+ * @s: Character to be checked
+ * @c: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_strchr(char *s, char c)
+{
+        char *ptr = strchr(s, c);
+
+        if (ptr != NULL)
+        {
+                return (ptr);
+        }
+        else
+        {
+                return (NULL);
+        }
+}
+2-strlen.c/     0           0     0     644     291       `
+#include "main.h"
+
+/**
+ * _strlen - Entry point
+ * @s: Character to be checked
+ *
+ * Return: Always integer (Success)
+ */
+int _strlen(char *s)
+{
+        int strlen = 0;
+
+        while (*s != '\0')
+        {
+                strlen++;
+                s++;
+        }
+        return (strlen);
+}
+
+3-islower.c/    0           0     0     644     292       `
 #include "main.h"
 /**
  * _islower - Entry point
@@ -236,6 +251,7 @@ int _islower(int c)
                 return (0);
         }
 }
+3-puts.c/       0           0     0     644     182       `
 #include "main.h"
 #include <stdio.h>
 /**
@@ -248,6 +264,7 @@ void _puts(char *str)
 {
         puts(str);
 }
+3-strcmp.c/     0           0     0     644     442       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -275,6 +292,7 @@ int _strcmp(char *s1, char *s2)
 
         return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
 }
+3-strspn.c/     0           0     0     644     467       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -298,6 +316,8 @@ unsigned int _strspn(char *s, char *accept)
         }
         return (len);
 }
+
+4-isalpha.c/    0           0     0     644     320       `
 #include "main.h"
 /**
  * _isalpha - Entry point
@@ -316,6 +336,7 @@ int _isalpha(int c)
                 return (0);
         }
 }
+4-strpbrk.c/    0           0     0     644     399       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -337,6 +358,8 @@ char *_strpbrk(char *s, char *accept)
         else
                 return (NULL);
 }
+
+5-strstr.c/     0           0     0     644     418       `
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
@@ -359,6 +382,7 @@ char *_strstr(char *haystack, char *needle)
         else
                 return (NULL);
 }
+6-abs.c/        0           0     0     644     318       `
 #include "main.h"
 /**
  * _abs - Entry points
@@ -377,6 +401,7 @@ int _abs(int n)
                 return (n);
         }
 }
+9-strcpy.c/     0           0     0     644     380       `
 #include "main.h"
 /**
  * _strcpy - Entry point
@@ -397,6 +422,7 @@ char *_strcpy(char *dest, char *src)
         }
         return (dest);
 }
+_putchar.c/     0           0     0     644     247       `
 #include <unistd.h>
 
 /**
@@ -410,3 +436,4 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
