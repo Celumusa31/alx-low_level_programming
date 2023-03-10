@@ -1,0 +1,412 @@
+#include "main.h"
+/**
+ * _isupper - Entry point
+ * @c: The character to be checked
+ *
+ * Return: Always 1 or 0 (Success)
+ */
+int _isupper(int c)
+{
+        if (c >= 'A' && c <= 'Z')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _memset - Entry point
+ * @s: Character to be checked
+ * @b: Character to be checked
+ * @n: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+        memset(s, b, n * sizeof(s[n]));
+        return (s);
+}
+
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strcat - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ *
+ * Return: Always dest (Success)
+ */
+char *_strcat(char *dest, char *src)
+{
+        strcat(dest, src);
+
+        return (dest);
+}
+#include "main.h"
+/**
+ * _isdigit - Entry point
+ * @c: The character to be checked
+ *
+ * Return: Always 1 or 0 (Success)
+ */
+int _isdigit(int c)
+{
+        if (c >= '0' && c <= '9')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+#include "main.h"
+
+/**
+ * _memcpy - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * @n: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+        unsigned int i;
+
+        for (i = 0; i < n; i++)
+        {
+                dest[i] = src[i];
+        }
+
+        return (dest);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strncat - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * @n: Character to be checked
+ *
+ * Return: Always dest (Success)
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+        strncat(dest, src, n);
+        return (dest);
+}
+#include "main.h"
+
+/**
+ * _atoi - Entry point
+ * @s: Character to be checked
+ *
+ * Return: Always ni (Success)
+ */
+int _atoi(char *s)
+{
+        int c = 0;
+        unsigned int ni = 0;
+        int min = 1;
+        int isi = 0;
+
+        while (s[c])
+        {
+                if (s[c] == 45)
+                {
+                        min *= -1;
+                }
+        while (s[c] >= 48 && s[c] <= 57)
+        {
+                isi = 1;
+                ni = (ni * 10) + (s[c] - '0');
+                c++;
+        }
+        if (isi == 1)
+        {
+                break;
+        }
+        c++;
+        }
+        ni *= min;
+        return (ni);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strchr - Entry point
+ * @s: Character to be checked
+ * @c: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_strchr(char *s, char c)
+{
+        char *ptr = strchr(s, c);
+
+        if (ptr != NULL)
+        {
+                return (ptr);
+        }
+        else
+        {
+                return (NULL);
+        }
+}
+#include "main.h"
+
+/**
+ * _strlen - Entry point
+ * @s: Character to be checked
+ *
+ * Return: Always integer (Success)
+ */
+int _strlen(char *s)
+{
+        int strlen = 0;
+
+        while (*s != '\0')
+        {
+                strlen++;
+                s++;
+        }
+        return (strlen);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strncpy - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * @n: Character to be checked
+ *
+ * Return: Always char (Success)
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+        int a = 0, b = 0;
+
+        while (src[b])
+        {
+                b++;
+        }
+
+        while (a < n && src[a])
+        {
+                dest[a] = src[a];
+                a++;
+        }
+
+        while (a < n)
+        {
+                dest[a] = '\0';
+                a++;
+        }
+
+        return (dest);
+}
+#include "main.h"
+/**
+ * _islower - Entry point
+ * @c: The character to be checked
+ *
+ * Return: Always 1 or 0 (Success)
+ */
+int _islower(int c)
+{
+        if (c >= 'a' && c <= 'z')
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+#include "main.h"
+#include <stdio.h>
+/**
+ * _puts - Entry point
+ * @str: Character to be checked
+ *
+ * Return: Always void (Success)
+ */
+void _puts(char *str)
+{
+        puts(str);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strcmp - Entry point
+ * @s1: Character to be checked
+ * @s2: Character to be checked
+ *
+ * Return: Always integer (Success)
+ */
+int _strcmp(char *s1, char *s2)
+{
+        while (*s1)
+        {
+
+        if (*s1 != *s2)
+        {
+                break;
+        }
+
+        s1++;
+        s2++;
+        }
+
+
+        return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strspn - Entry point
+ * @s: Character to be checked
+ * @accept: Character to be checked
+ *
+ * Return: Always number of bytes (Success)
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+        unsigned int len = 0;
+
+        if ((s == NULL) || (accept == NULL))
+                return (len);
+
+        while (*s && strchr(accept, *s++))
+        {
+                len++;
+        }
+        return (len);
+}
+#include "main.h"
+/**
+ * _isalpha - Entry point
+ * @c: The character to be checked
+ *
+ * Return: Always 1 or 0 (Success)
+ */
+int _isalpha(int c)
+{
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        {
+                return (1);
+        }
+        else
+        {
+                return (0);
+        }
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ * _strpbrk - Entry point
+ * @s: Character to be checked
+ * @accept: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_strpbrk(char *s, char *accept)
+{
+        char *ptr = strpbrk(s, accept);
+
+        if (ptr != NULL)
+        {
+                return (ptr);
+        }
+        else
+                return (NULL);
+}
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strstr - Entry point
+ * @haystack: Character to be checked
+ * @needle: Character to be checked
+ *
+ * Return: Always pointer (Success)
+ */
+char *_strstr(char *haystack, char *needle)
+{
+        char *ptr = strstr(haystack, needle);
+
+        if (ptr != NULL)
+        {
+                return (ptr);
+        }
+        else
+                return (NULL);
+}
+#include "main.h"
+/**
+ * _abs - Entry points
+ * @n: The character to be checked
+ * Return: Always return absolute value of n  (Success)
+ */
+int _abs(int n)
+{
+        if (n < 0)
+        {
+                n = (-1) * n;
+                return (n);
+        }
+        else
+        {
+                return (n);
+        }
+}
+#include "main.h"
+/**
+ * _strcpy - Entry point
+ * @dest: Character to be checked
+ * @src: Character to be checked
+ * Return: Always dest (Success)
+ */
+char *_strcpy(char *dest, char *src)
+{
+        int i;
+
+        for (i = 0; src[i] != '\0'; i++)
+        {
+                dest[i] = src[i];
+        }
+        {
+                dest[i++] = '\0';
+        }
+        return (dest);
+}
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
