@@ -11,30 +11,36 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
 	int i;
-	int num;
-	char *a;
-	char *b = "0";
+	unsigned int k, sum = 0;
+	char *e;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 1)
 	{
-		num = atoi(argv[i]);
-
-		if (num < 0)
+		for (i = 1; i < argc; i++)
 		{
-			continue;
-		}
-		a = argv[i];
+			e = argv[i];
 
-		if (num == 0 && *a != *b)
-		{
-			printf("Error\n");
-			return (1);
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			sum += atoi(e);
+			e++;
 		}
-		sum = sum + num;
+
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
+	else
+	{
+		printf("0\n");
+	}
 
 	return (0);
 }
+
