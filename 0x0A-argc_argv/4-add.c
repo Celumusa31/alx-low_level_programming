@@ -14,6 +14,8 @@ int main(int argc, char *argv[])
 	int sum = 0;
 	int i;
 	int num;
+	char *a;
+	char *b = "0";
 
 	for (i = 1; i < argc; i++)
 	{
@@ -23,7 +25,9 @@ int main(int argc, char *argv[])
 		{
 			continue;
 		}
-		if (num == 0)
+		a = argv[i];
+
+		if (num == 0 && *a != *b)
 		{
 			printf("Error\n");
 			return (1);
