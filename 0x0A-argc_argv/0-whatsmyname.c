@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - Entry point
  * @argc: Character to be checked
