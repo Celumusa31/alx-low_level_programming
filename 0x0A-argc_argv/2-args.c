@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * @argc: Character to be checked
- * @argcv: Character to be checked
+ * @argv: Character to be checked
  *
  * Return: Always integer (Success)
  */
