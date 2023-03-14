@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * strdup - Entry point
+ * _strdup - Entry point
  * @str: Character to be checked
  *
  * Return: Always pointer (Success)
