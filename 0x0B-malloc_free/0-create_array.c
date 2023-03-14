@@ -4,7 +4,7 @@
 
 /**
  * create_array - Entry point
- * @size; Character to be checked
+ * @size: Character to be checked
  * @c: Character to be checked
  *
  * Return: Alwyas pointer (Success)
