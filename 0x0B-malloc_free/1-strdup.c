@@ -20,8 +20,9 @@ char *_strdup(char *str)
 
 	if (ptr == NULL)
 		return (NULL);
+	ptr = str;
 
-	while (*str)
+	while(*str)
 		*ptr++ = *str++;
 	*ptr++ = '\0';
 	return (ptr);
