@@ -46,6 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			*(ptr + s1_length + j) = *(s2 + j);
 			j++;
 		}
+	*(ptr + s1_length + j) = '\0';
 	if (ptr == NULL)
 		return (NULL);
 	return (ptr);
