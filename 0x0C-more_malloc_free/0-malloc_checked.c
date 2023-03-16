@@ -16,9 +16,8 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 		return (NULL);
-
-	for (i = 0; i < n; i++)
-		ptr[i] = i;
+	else
+		exit(98);
 
 	return (ptr);
 }
