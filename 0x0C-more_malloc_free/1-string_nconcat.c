@@ -11,43 +11,42 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int s1_length = strlen(s1);
-	unsigned int s2_length = strlen(s2);
-	int i = 0;
-	unsigned int j = 0;
-	int size;
-	char *ptr;
+	unsigned int i = 0, j = 0, k = 0, l = 0;
+	char *str;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (n >= s2_length)
-		size = s1_length + s2_length + 1;
-	else
-		size = s1_length + n + 1;
 
-	ptr = (char *) malloc(size * sizeof(char));
-
-	while (*(s1 + i) != '\0')
-	{
-		*(ptr + i) = *(s1 + i);
+	while (s1[i])
 		i++;
-	}
-	if (n >= s2_length)
-		while (*(s2 + j) != '\0')
-		{
-			*(ptr + s1_length + j) = *(s2 + j);
-			j++;
-		}
-	if (n < s2_length)
-		while (j != n)
-		{
-			*(ptr + s1_length + j) = *(s2 + j);
-			j++;
-		}
-	*(ptr + s1_length + j) = '\0';
-	if (ptr == NULL)
+
+	while (s2[k])
+		k++;
+
+	if (n >= k)
+		l = i + k;
+	else
+		l = i + n;
+
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
 		return (NULL);
-	return (ptr);
+
+	k = 0;
+	while (j < l)
+	{
+		if (j <= i)
+			str[j] = s1[j];
+
+		if (j >= i)
+		{
+			str[j] = s2[k];
+			k++;
+		}
+		j++;
+	}
+	str[j] = '\0';
+	return (str);
 }
