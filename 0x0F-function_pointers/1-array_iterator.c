@@ -3,7 +3,8 @@
 /**
  * array_iterator - Entry point
  * @array: Character to be checked
- * @f: Function pointers
+ * @size: Character to be checked
+ * @action: Function pointers
  *
  * Return: Always void (Success)
  */
