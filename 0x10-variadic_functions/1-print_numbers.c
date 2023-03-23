@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - Entry point
- * @saparator: Character to be checked
+ * @separator: Character to be checked
  * @n: Character to be checked
  *
  * Return: Always void (Success)
