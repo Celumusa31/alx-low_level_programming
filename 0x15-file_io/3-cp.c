@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 }
 
 /**
-  * copy_file - Entry point
+  * cpy - Entry point
   * @source: The character to be checked
   * @destination: The character to be checked
   *
