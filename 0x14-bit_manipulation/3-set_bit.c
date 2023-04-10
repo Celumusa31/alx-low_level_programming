@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * se_bit - Entry point
  * @n: Character to be checked
@@ -8,7 +9,9 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (!index)
+	unsigned int i = (sizeof(unsigned long int) * 8);
+
+	if (index >= i)
 	{
 		return (-1);
 	}
