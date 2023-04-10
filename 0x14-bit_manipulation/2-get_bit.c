@@ -10,23 +10,31 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int *bit = malloc(sizeof(unsigned int) * index);
-	unsigned int mask;
-	unsigned int masked_n;
-	unsigned int thebit;
+	unsigned int i = 0;
 
-	unsigned int k;
-	if (!index)
-		return (-1);
-
-	for (k = 0; k < index; k++)
+	while (n)
 	{
-		mask =  1 << k;
-		masked_n = n & mask;
-		thebit = masked_n >> k;
-		bit[k] = thebit;
+		if (i == index)
+		{
+			if (n % 2)
+			{
+				return (1);
+			}
+			else
+			{
+				return (0);
+			}
+		}
+
+		n = n / 2;
+		i++;
 	}
 
-	return (*bit);
+	if (index > i && index < 63)
+	{
+		return (0);
+	}
+
+	return (-1);
 }
 
