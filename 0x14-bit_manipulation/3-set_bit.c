@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * se_bit - Entry point
+ * set_bit - Entry point
  * @n: Character to be checked
  * @index: Character to be checked
  * Return: Always int (Success)
